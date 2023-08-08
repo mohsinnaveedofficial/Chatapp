@@ -36,7 +36,7 @@
         android:layout_marginLeft="10dp"
         android:layout_toRightOf="@+id/profileview"
         android:gravity="center_vertical"
-        android:text="Name"
+        android:text="NAME"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"></TextView>
