@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/simple"
+    android:orientation="vertical"
+    tools:context=".Signup">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="SIGN UP"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="25dp"
+        android:text="It's quick and easy"
+        android:textColor="#FFFFFF">
+
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/etfirstname"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:hint="Enter your first name"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/etlastname"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:hint="Enter your last name"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white">
+
+        </EditText>
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/etemail"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:hint="Enter your email or mobile number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/etpass"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:hint="Enter your password"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white">
+
+    </EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Country"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="italic">
+
+    </TextView>
+
+    <Spinner
+        android:id="@+id/country"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:entries="@array/Country"
+
+        android:spinnerMode="dialog"></Spinner>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Gender"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="italic">
+
+    </TextView>
+
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/gendermale"
+            android:layout_width="109dp"
+            android:layout_height="60dp"
+            android:text="MALE"
+            android:textColor="@color/white"></RadioButton>
+
+
+        <RadioButton
+            android:id="@+id/genderfemale"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="Female"
+            android:textColor="@color/white"></RadioButton>
+
+
+        <RadioButton
+            android:id="@+id/any"
+            android:layout_width="109dp"
+            android:layout_height="60dp"
+            android:text="Coustom"
+            android:textColor="@color/white"></RadioButton>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Education"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="italic">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <CheckBox
+            android:id="@+id/matric"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:text="Matric"
+            android:textColor="@color/white">
+
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/inter"
+            android:layout_width="0dp"
+
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:text="Inter"
+
+            android:textColor="@color/white"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/bach"
+            android:layout_width="0dp"
+
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:text="Bachelor"
+
+            android:textColor="@color/white"></CheckBox>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:background="#00BCD4"
+        android:gravity="center"
+        android:text="Sign up"
+        android:textColor="@color/black"
+        android:textSize="30sp">
+    </Button>
+
+</LinearLayout>

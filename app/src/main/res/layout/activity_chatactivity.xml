@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chatactivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#313A39"></androidx.appcompat.widget.Toolbar>
+
+    <Button
+        android:id="@+id/backbutton"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="#313A39"
+        android:drawableLeft="@mipmap/back"></Button>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileview"
+        android:layout_width="55dp"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@+id/backbutton"
+        android:src="@mipmap/person"
+        app:civ_border_color="@color/black"
+        app:civ_border_width="2dp"></de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/profilename"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/profileview"
+        android:gravity="center_vertical"
+        android:text="Name"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:id="@+id/profilelastseen"
+        android:layout_width="80dp"
+        android:layout_height="20sp"
+        android:layout_below="@id/profilename"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/profileview"
+        android:gravity="center_vertical"
+        android:text="lastseen"
+        android:textColor="@color/white"></TextView>
+
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/profilename"
+        android:background="#313A39"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/videocall"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/mynew"
+            android:drawableLeft="@mipmap/videocall"></Button>
+
+        <Button
+            android:id="@+id/call"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/mynew"
+            android:drawableLeft="@mipmap/call"
+
+            ></Button>
+
+        <Button
+            android:id="@+id/option"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+
+            android:background="@drawable/mynew"
+            android:drawableLeft="@mipmap/menu"></Button>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+
+        android:layout_height="620dp"
+        android:layout_below="@+id/view"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+    <EditText
+        android:id="@+id/etmessage"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:hint="Type a message"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"></EditText>
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/send"
+        ></Button>
+
+
+</RelativeLayout>

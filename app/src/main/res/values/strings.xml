@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Chatapp</string>
+
+
+    <array name="Country">
+
+        <item>--please select--</item>
+        <item>PAKISTAN</item>
+        <item>AMERICA</item>
+        <item>INDIA</item>
+        <item>UAE</item>
+        <item>CANADA</item>
+    </array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
